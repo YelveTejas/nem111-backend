@@ -6,7 +6,10 @@ const  {noteRoute} = require('./Routes/notesRoute')
 const {UserRoute} =  require('./Routes/userRoutes')
 app.use(express.json())
 const {authenticate} = require('./middleware/authentication')
-
+const cors =require('cors')
+app.use(cors({
+  
+}))
 
 
 
